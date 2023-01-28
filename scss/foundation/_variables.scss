@@ -1,0 +1,55 @@
+//site-width
+$site-width: 980px;
+
+//header-height
+$header-height: 80px;
+$header-height-sp: 60px;
+
+//margin padding
+$space-xxs: 5px;
+$space-xs: 10px;
+$space-s: 15px;
+$space-sm: 20px;
+$space-m: 30px;
+$space-l: 50px;
+$space-xl: 80px;
+
+//fontsize
+$fontsize-m: 24px;
+$fontsize-sm: 18px;
+$fontsize-default: 16px;
+$fontsize-s: 14px;
+$fontsize-xs: 12px;
+
+//font
+$font-alphabet: 'PT Sans';
+$font-jap: 'Zen Kaku Gothic Antique';
+$font-default: sans-serif;
+
+//textarea-height
+$textarea-m: 250px;
+$textarea-s: 130px;
+$textarea-l: 500px;
+$textarea-xl: 1365px;
+
+//color
+$color-notice: #f00;
+$color-err-input: rgba(255, 0, 0, 0.5);
+$color-border: #000;
+$color-active-star: rgb(255,186,0);
+$color-fav: rgb(255,0,85);
+$color-good: rgb(255,0,85);
+$color-base: #e2dbbd;
+$color-acc: #759488;
+$color-sub: #8d001d;
+$color-bg: #f8fbff;
+
+//breakpoints
+$breakpoints: (
+  'sm': 'screen and (max-width: 540px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1366px)',
+);
+
+
+

@@ -1,0 +1,17 @@
+.l-sub{
+  width: 26%;
+  box-sizing: border-box;
+  padding-left: 1%;
+  @include mq(lg){
+    width: 51%;
+    padding-left: 0;
+  }
+  @include mq(md){
+    width: 65%;
+    padding-left: 0;
+  }
+  @include mq(){
+    width: 100%;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,90 @@
+.p-found-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1%;
+  @include mq(lg){
+    box-sizing: border-box;
+  }
+  @include mq(md){
+    box-sizing: border-box;
+  }
+  @include mq(){
+    box-sizing: border-box;
+    margin-right: 0;
+    justify-content: space-between;
+  }
+  &__content-panel{
+    width: 24%;
+    height: 395px;
+    margin-right: 1%;
+    margin-bottom: $space-xs;
+    @include mq(lg){
+      height: auto;
+    }
+    @include mq(md){
+      width: 32%;
+      height: auto;
+    }
+    @include mq(){
+      width: 49%;
+      height: auto;
+      margin-right: 0;
+    }
+  }
+  &__img-wrapper{
+    height: 202px;
+    @include mq(lg){
+      height: 30.1vw;
+    }
+    @include mq(md){
+      height: 37.3vw;
+    }
+    @include mq(){
+      height: 57.3vw;
+    }
+  }
+  &__img-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img{
+    width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+  }
+  &__checkbox{
+    top: 16px;
+    left: 1px;
+    @include mq(lg){
+      top: 15px;
+    }
+    @include mq(md){
+      top: 15px;
+    }
+    @include mq(){
+      top: 15px;
+    }
+  }
+  &__title{
+    margin-top: $space-xs;
+    margin-bottom: $space-xxs;
+    height: 63px;
+  }
+  &__table{
+    width: 100%;
+  }
+  &__left-cell{
+    width: 25%;
+    text-align: center;
+  }
+  &__right-cell{
+    width: 75%;
+    text-align: center;
+  }
+  &__cmd{
+    font-size: $fontsize-xs;
+  }
+}

@@ -1,0 +1,17 @@
+.c-choice-cmd{
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: $color-sub;
+  &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-color: $color-acc;
+    text-decoration-thickness: 2px;
+  }
+  &:active{
+    color: $color-acc;
+    text-decoration: none;
+  }
+}

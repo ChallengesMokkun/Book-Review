@@ -1,0 +1,94 @@
+.p-content-form{
+  &__form-row{
+    margin-bottom: $space-sm;
+  }
+  &__textform{
+    width: 100%;
+  }
+  &__textarea{
+    width: 100%;
+  }
+  &__selectform{
+    width: 100%;
+  }
+  &__numberform{
+    width: 100%;
+  }
+  &__datetimelocalform{
+    width: 100%;
+  }
+  &__form-label{
+    br{
+      display: none;
+      @include mq(md){
+        display: inline;
+      }
+      @include mq(){
+        display: inline;
+      }
+    }
+  }
+  &__checkboxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  &__box-wrapper{
+    margin-right: $space-xs;
+  }
+  &__img-form-wrapper{
+    margin-top: $space-sm;
+  }
+  &__img-label{
+    width: 100%;
+    height: 915px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed $color-acc;
+    @include mq(lg){
+      height: 89.7vw;
+    }
+    @include mq(md){
+      height: 94.4vw;
+    }
+    @include mq(){
+      height: 109.5vw;
+    }
+  }
+  &__fileform{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  &__img{
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+  }
+  &__btn-wrapper{
+    margin-top: $space-m;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mq(){
+      height: initial;
+      margin-top: initial;
+    }
+  }
+  &__btn{
+    width: calc(80% / 3);
+    padding: 7px 0;
+    @include mq(){
+      width: 100%;
+      margin-top: $space-sm;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
+}

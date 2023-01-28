@@ -1,0 +1,13 @@
+.c-page{
+  padding: 2.5px 5px;
+  &--active{
+    background-color: $color-sub;
+  }
+  &__link{
+    color: $color-sub;
+    display: block;
+    &--active{
+      color: $color-base;
+    }
+  }
+}

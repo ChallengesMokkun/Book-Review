@@ -1,0 +1,50 @@
+.p-search-top{
+  width: 73%;
+  margin-bottom: $space-sm;
+  text-align: center;
+  @include mq(lg){
+    width: 100%;
+  }
+  @include mq(md){
+    width: 100%;
+  }
+  @include mq(){
+    width: 100%;
+  }
+  &__page-title{
+    margin-bottom: $space-m;
+  }
+  &__search-result{
+    margin-bottom: $space-xs;
+    br{
+      display: none;
+    }
+    @include mq(){
+      span{
+        display: none;
+      }
+      br{
+        display: inline;
+      }
+    }
+  }
+  &__search-option{
+    display: inline-block;
+    &:hover{
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  &__link{
+    color: $color-sub;
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: $color-acc;
+      text-decoration-thickness: 2px;
+    }
+    &:active{
+      color: $color-acc;
+      text-decoration: none;
+    }
+  }
+}

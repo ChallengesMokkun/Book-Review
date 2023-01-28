@@ -1,0 +1,76 @@
+.c-content-panel{
+  border: 1px solid $color-sub;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 9px 2% 5px 2%;
+  @include mq(lg){
+    padding: 9px 1% 5px 1%;
+  }
+  @include mq(md){
+    padding: 9px 2% 5px 2%;
+  }
+  @include mq(){
+    padding: 9px 2% 5px 2%;
+  }
+  &__checkbox{
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 1;
+    &:hover{
+      cursor: pointer;
+    }
+    &::before{
+      content: "";
+      display: block; 
+      position: absolute;
+      background-color: $color-base;
+      border-radius: 2px;
+      border: 1px solid $color-acc;
+      width: 24px;
+      height: 24px;
+      transform: translateY(-50%);
+      top: -2px;
+      left: -1px;
+    }
+    &::after{
+      content: "";
+      display: block; 
+      position: absolute;
+      border-bottom: 3px solid $color-sub;
+      border-left: 3px solid $color-sub;
+      opacity: 0;
+      height: 8px;
+      width: 17px;
+      transform: rotate(-45deg);
+      top: -11px;
+      left: 2px;
+    }
+    &:checked::after{
+      opacity: 1;
+    }
+  }
+  &__title{
+    font-size: $fontsize-s;
+  }
+  &__title-link{
+    color: $color-sub;
+    &:hover{
+      text-decoration: underline;
+    }
+    &:active{
+      color: $color-acc;
+      text-decoration: none;
+    }
+  }
+  &__table{
+    font-size: $fontsize-xs;
+  }
+}

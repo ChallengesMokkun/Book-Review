@@ -1,0 +1,49 @@
+.c-checkboxform{
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0 15px 0 0;
+  vertical-align: middle;
+  position: relative;
+  &:hover{
+    cursor: pointer;
+  }
+  &::before{
+    content: "";
+    display: block; 
+    position: absolute;
+    background-color: $color-base;
+    border-radius: 2px;
+    border: 1px solid $color-acc;
+    width: 13px;
+    height: 13px;
+    transform: translateY(-50%);
+    top: -2px;
+    left: -1px;
+  }
+  &::after{
+    content: "";
+    display: block; 
+    position: absolute;
+    border-bottom: 3px solid $color-sub;
+    border-left: 3px solid $color-sub;
+    opacity: 0;
+    height: 3px;
+    width: 8px;
+    transform: rotate(-45deg);
+    top: -6px;
+    left: 1px;
+  }
+  &:checked::after{
+    opacity: 1;
+  }
+  &__label{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

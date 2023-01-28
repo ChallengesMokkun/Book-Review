@@ -1,0 +1,31 @@
+.c-btn{
+  font-size: $fontsize-sm;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-family: $font-jap;
+  &:hover{
+    cursor: pointer;
+  }
+  &--active{
+    background-color: $color-sub;
+    color: $color-base;
+    padding: 7px 15px;
+  }
+  &--inactive{
+    color: $color-acc;
+    border: 2px dashed $color-acc;
+    background-color: $color-base;
+    padding: 4px 15px;
+  }
+  &--l{
+    width: 100%;
+  }
+  &--m{
+    width: 45%;
+  }
+  &--s{
+    width: calc(80% / 3);
+  }
+}

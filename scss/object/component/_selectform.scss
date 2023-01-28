@@ -1,0 +1,18 @@
+.c-selectform{
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 5px 10px;
+  height: 40px;
+  background-color: $color-base;
+  border: 1px solid $color-acc;
+  border-radius: 5px;
+  color: $color-sub;
+  font-family: $font-alphabet, $font-jap, $font-default;
+  &:focus{
+    border: 2px solid $color-sub;
+    outline: 0;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}

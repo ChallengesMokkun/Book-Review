@@ -1,0 +1,59 @@
+.p-content-header{
+  margin-bottom: $space-sm;
+  &__element{
+    margin-right: $space-xs;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__icon-wrapper{
+    margin-right: $space-xxs;
+  }
+  &__sub-heading{
+    margin-top: $space-xs;
+    margin-bottom: $space-xs;
+  }
+  &__attr-area{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__content-attr{
+    margin-right: $space-sm;
+    display: flex;
+    flex-wrap: wrap;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__link{
+    color: $color-sub;
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: $color-acc;
+      text-decoration-thickness: 2px;
+    }
+    &:active{
+      color: $color-acc;
+      text-decoration: none;
+    }
+  }
+  &__links{
+    margin-right: $space-xxs;
+    color: $color-sub;
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: $color-acc;
+      text-decoration-thickness: 2px;
+    }
+    &:active{
+      color: $color-acc;
+      text-decoration: none;
+    }
+    @include mq(md){
+      margin-right: 0;
+    }
+    @include mq(){
+      margin-right: 0;
+    }
+  }
+}

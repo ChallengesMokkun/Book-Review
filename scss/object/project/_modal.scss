@@ -1,0 +1,49 @@
+.p-modal{
+  position: relative;
+  &__modal-back{
+    display: none;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color-sub;
+  }
+  &__modal-window{
+    display: none;
+    z-index: 5;
+    position: absolute;
+    padding: $space-sm;
+    background-color: $color-base;
+    box-sizing: border-box;
+    border-radius: 5px;
+    @include mq(md){
+      width: 90%;
+    }
+    @include mq(){
+      width: 90%;
+    }
+  }
+  &__sub-heading{
+    margin-bottom: $space-sm;
+    text-align: center;
+    @include mq(){
+      font-size: 20px;
+      margin-bottom: $space-xs;
+    }
+  }
+  &__fonticon{
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    font-size: 40px;
+    color: $color-notice;
+    &:hover{
+      cursor: pointer;
+    }
+    @include mq(){
+      top: 15px;
+      font-size: 35px;
+    }
+  }
+}

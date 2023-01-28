@@ -1,0 +1,46 @@
+.c-fonticon{
+  &--active-star{
+    color: $color-active-star;
+    &-half{
+      position: absolute;
+      &::before{
+        overflow:hidden;
+        position:absolute;
+        left:0;
+        top: 2.5px;
+        width: 9px;
+        color: $color-active-star;
+      }
+    }
+  }
+  &--active-fav{
+    color: $color-fav;
+  }
+  &--inactive-fav{
+    transition: all 1s;
+    animation: bounce 1s ease-out infinite;
+    @keyframes bounce{
+      0%{
+        transform: translateY(0) scaleX(1) scaleY(1);
+      }
+      25%{
+        transform: translateY(-2.5px) scaleX(1) scaleY(1.1);
+      }
+      50%{
+        transform: translateY(-2.5px) scaleX(1) scaleY(1.2);
+      }
+      75%{
+        transform: translateY(2.5px) scaleX(1) scaleY(1.1);
+      }
+      100%{
+        transform: translateY(2.5px) scaleX(1) scaleY(1);
+      }
+    }
+  }
+  &--active-good{
+    color: $color-good;
+  }
+  &--hide-star{
+    display: none !important;
+  }
+}

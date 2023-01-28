@@ -1,0 +1,20 @@
+.c-menu-link{
+  display: inline-block;
+  &--sidebar{
+    @include mq(){
+      font-size: $fontsize-s;
+    }
+  }
+  &__link{
+    color: $color-sub;
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: $color-acc;
+      text-decoration-thickness: 2px;
+    }
+    &:active{
+      color: $color-acc;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.c-content-attr{
+  @include mq(){
+    font-size: $fontsize-s;
+  }
+}

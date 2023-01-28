@@ -1,0 +1,48 @@
+.c-textarea{
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 5px 10px;
+  background-color: $color-base;
+  border: 1px solid $color-acc;
+  border-radius: 5px;
+  color: $color-sub;
+  font-family: $font-alphabet, $font-default, $font-jap;
+  &:focus{
+    border: 2px solid $color-sub;
+    outline: 0;
+  }
+  &::-webkit-input-placeholder{
+    color: $color-acc;
+    font-family: $font-alphabet, $font-jap, $font-default;
+  }
+  &:-moz-placeholder{
+    color: $color-acc;
+    font-family: $font-alphabet, $font-jap, $font-default;
+  }
+  &::-moz-placeholder{
+    color: $color-acc;
+    font-family: $font-alphabet, $font-jap, $font-default;
+  }
+  &:-ms-input-placeholder{
+    color: $color-acc;
+    font-family: $font-alphabet, $font-jap, $font-default;
+  }
+  &.err{
+    background-color: $color-err-input;
+  }
+  &--s{
+    height: $textarea-s;
+    min-height: $textarea-s;
+    max-height: $textarea-m;
+  }
+  &--m{
+    height: $textarea-m;
+    min-height: $textarea-m;
+    max-height: $textarea-l;
+  }
+  &--l{
+    height: $textarea-l;
+    min-height: $textarea-l;
+    max-height: $textarea-xl;
+  }
+}

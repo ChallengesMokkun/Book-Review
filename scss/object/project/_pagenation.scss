@@ -1,0 +1,41 @@
+.p-pagenation{
+  margin-top: $space-m;
+  &__pagelist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include mq(){
+      flex-direction: column;
+    }
+  }
+  &__prev-wrapper{
+    display: flex;
+    @include mq(){
+      justify-content: flex-start;
+      .p-pagenation__page:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  &__number-wrapper{
+    display: flex;
+    @include mq(){
+      justify-content: center;
+      .p-pagenation__page:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  &__next-wrapper{
+    display: flex;
+    @include mq(){
+      justify-content: flex-end;
+    }
+    .p-pagenation__page:last-child{
+      margin-right: 0;
+    }
+  }
+  &__page{
+    margin-right: $space-s;
+  }
+}

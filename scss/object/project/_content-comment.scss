@@ -1,0 +1,35 @@
+.p-content-comment{
+  margin-bottom: $space-m;
+  &__sub-heading{
+    margin-bottom: $space-sm;
+  }
+  &__comment-row{
+    margin-bottom: $space-sm;
+  }
+  &__comment-wrapper{
+    border: 1px solid $color-sub;
+    border-radius: 5px;
+    padding: $space-xxs $space-xs;
+    box-sizing: border-box;
+  }
+  &__confirm-text{
+    margin-bottom: $space-s;
+  }
+  &__record-info{
+    margin-right: $space-xs;
+  }
+  &__cmd-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__cmd{
+    font-size: $fontsize-default;
+  }
+  &__num-info{
+    margin-left: $space-xxs;
+  }
+  &__score-wrapper{
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,41 @@
+.p-menu-page{
+  box-sizing: border-box;
+  padding: 5% 7%;
+  border: 1px solid $color-sub;
+  border-radius: 5px;
+  @include mq(lg){
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  @include mq(md){
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  @include mq(){
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  &__lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 120px;
+    @include mq(lg){
+      height: 150px;
+      justify-content: space-between;
+    }
+    @include mq(md){
+      height: 150px;
+      justify-content: space-between;
+    }
+    @include mq(){
+      height: 150px;
+      justify-content: space-between;
+    }
+  }
+  &__menu-link{
+    min-width: 112px;
+
+  }
+}

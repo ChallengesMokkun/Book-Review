@@ -1,0 +1,87 @@
+.p-search-menu{
+  width: 500px;
+  box-sizing: border-box;
+  padding: 0 $space-sm $space-xs $space-sm;
+  @include mq(md){
+    width: 100%;
+    overflow-y: auto;
+  }
+  @include mq(){
+    width: 100%;
+    overflow-y: auto;
+  }
+  &__search-row{
+    margin-bottom: $space-s;
+    &:nth-of-type(1){
+      margin-top: $space-sm;
+    }
+    @include mq(){
+      margin-bottom: $space-xxs;
+      &:nth-of-type(1){
+        margin-top: $space-xs;
+      }
+    }
+  }
+  &__form-label{
+    font-size: $fontsize-s;
+  }
+  &__textform{
+    width: 100%;
+    padding: 2px 5px;
+    height: initial;
+    font-size: $fontsize-default;
+  }
+  &__selectform{
+    width: 100%;
+    padding: 2px 5px;
+    height: initial;
+    font-size: $fontsize-default;
+  }
+  &__datetimelocalform{
+    width: 100%;
+    padding: 2px 5px;
+    height: initial;
+    font-size: $fontsize-default;
+  }
+  &__radio-label{
+    @include mq(){
+      font-size: $fontsize-xs;
+    }
+  }
+  &__btn{
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: $fontsize-default;
+    height: 31px;
+    @include mq(){
+      &:last-child{
+        margin-top: $space-s;
+      }
+    }
+  }
+  &__checkboxes{
+    display: flex;
+    flex-wrap: wrap;
+    padding: $space-xxs $space-xxs $space-xxs $space-s;
+    border: 1px solid $color-acc;
+    overflow-y: auto;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  &__box-wrapper{
+    margin-right: $space-s;
+  }
+  &__radio-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  &__checkbox-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,10 @@
+.l-col2{
+  display: flex;
+  flex-wrap: wrap;
+  @include mq(lg){
+    justify-content: center;
+  }
+  @include mq(md){
+    justify-content: center;
+  }
+}

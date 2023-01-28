@@ -1,0 +1,26 @@
+.p-admin-inquiry{
+  &__memoform{
+    margin-bottom: $space-sm;
+  }
+  &__history{
+    margin-bottom: $space-sm;
+  }
+  &__heading{
+    margin-bottom: $space-sm;
+  }
+  &__memo{
+    margin-bottom: $space-sm;
+  }
+  &__textarea{
+    width: 100%;
+  }
+  &__confirm-text{
+    border: 1px solid $color-sub;
+    border-radius: 5px;
+    padding: $space-xxs $space-xs;
+    box-sizing: border-box;
+  }
+  &__cmd{
+    font-size: $fontsize-default;
+  }
+}

@@ -1,0 +1,81 @@
+.p-found-record{
+  @include mq(lg){
+    width: 51%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(md){
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(){
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__cmd-wrapper{
+    margin-bottom: 15px;
+  }
+  &__choice-cmd{
+    font-size: $fontsize-default;
+  }
+  &__check-num{
+    display: none;
+  }
+  &__add-form{
+    margin-bottom: $space-s;
+  }
+  &__record-row{
+    margin-bottom: $space-xs;
+  }
+  &__record-info{
+    margin-right: $space-sm;
+  }
+  &__notice{
+    color: $color-notice;
+  }
+  &__textform{
+    width: 40%;
+    display: block;
+    @include mq(md){
+      width: 65%;
+    }
+    @include mq(){
+      width: 100%;
+    }
+  }
+  &__btn{
+    width: 40%;
+    display: block;
+    height: 40px;
+    font-size: $fontsize-default;
+    box-sizing: border-box;
+    padding: $space-xxs $space-xs;
+    @include mq(md){
+      width: 65%;
+    }
+    @include mq(){
+      width: 100%;
+    }
+  }
+  &__cmd{
+    font-size: $fontsize-default;
+  }
+  &__form-wrapper{
+    display: none;
+  }
+  &__record-link{
+    color: $color-sub;
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: $color-acc;
+      text-decoration-thickness: 2px;
+    }
+    &:active{
+      color: $color-acc;
+      text-decoration: none;
+    }
+  }
+}

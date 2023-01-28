@@ -1,0 +1,17 @@
+.c-success-msg{
+  position: absolute;
+  z-index: 0;
+  padding: 25px 50px;
+  background-color: $color-sub;
+  color: $color-base;
+  border-radius: 5px;
+  opacity: 0;
+  box-shadow: 0 1px 30px $color-acc;
+  transition: all 2s ease-in;
+  &.active{
+    z-index: 3;
+    opacity: 1;
+    box-shadow: 0 5px 10px $color-acc;
+    transition: all 2s ease-out;
+  }
+}

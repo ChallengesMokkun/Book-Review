@@ -1,0 +1,10 @@
+{
+  "name": "Book-Review",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build_css": "node-sass --include-path scss scss/style.scss style/style.css",
+    "moniter_scss": "nodemon -e scss -x \"yarn build_css\""
+  } 
+}

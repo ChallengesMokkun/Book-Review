@@ -1,0 +1,167 @@
+.l-header{
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: $color-sub;
+  box-shadow: 0 1px 15px $color-acc;
+  @include mq(lg){
+    height: $header-height-sp;
+  }
+  @include mq(md){
+    height: $header-height-sp;
+  }
+  @include mq(){
+    height: $header-height-sp;
+  }
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: $site-width;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(lg){
+      width: 100%;
+      padding-left: $space-xs;
+      padding-right: $space-xs;
+    }
+    @include mq(md){
+      width: 100%;
+      padding-left: $space-xs;
+      padding-right: $space-xs;
+    }
+    @include mq(){
+      width: 100%;
+      padding-left: $space-xs;
+      padding-right: $space-xs;
+    }
+  }
+  &__logo-link{
+    color: $color-base;
+  }
+  &__push-wrapper{
+    display: none;
+    height: 30px;
+    width: 40px;
+    position: relative;
+    z-index: 3;
+    span{
+      width: 100%;
+      height: 3px;
+      background-color: $color-base;
+      position: absolute;
+      transition: all .5s;
+      display: inline-block;
+      &:nth-of-type(1){
+        top: 0;
+      }
+      &:nth-of-type(2){
+        top: 13.5px;
+      }
+      &:nth-of-type(3){
+        bottom: 0;
+      }
+    }
+    @include mq(lg){
+      display: inline-block;
+    }
+    @include mq(md){
+      display: inline-block;
+    }
+    @include mq(){
+      display: inline-block;
+    }
+    &.js-active span{
+      transition: all .5s;
+      &:nth-of-type(1){
+        transform: translateY(13.5px) rotate(-45deg);
+      }
+      &:nth-of-type(2){
+        opacity: 0;
+      }
+      &:nth-of-type(3){
+        transform: translateY(-13.5px) rotate(45deg);
+      }
+    }
+  }
+  &__nav{
+    @include mq(lg){
+      position: absolute;
+      top: 0;
+      right: -100%;
+      transition: all .5s;
+      width: 100%;
+      height: 100vh;
+      padding-top: 100px;
+      background-color: $color-sub;
+    }
+    @include mq(md){
+      position: absolute;
+      top: 0;
+      right: -100%;
+      transition: all .5s;
+      width: 100%;
+      height: 100vh;
+      padding-top: 100px;
+      background-color: $color-sub;
+    }
+    @include mq(){
+      position: absolute;
+      top: 0;
+      right: -100%;
+      transition: all .5s;
+      width: 100%;
+      height: 100vh;
+      padding-top: 100px;
+      background-color: $color-sub;
+    }
+    &.js-active{
+      transform: translateX(-100%);
+    }
+  }
+  &__main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$space-sm;
+    @include mq(lg){
+      display: block;
+    }
+    @include mq(md){
+      display: block;
+    }
+    @include mq(){
+      display: block;
+    }
+  }
+  &__menu{
+    margin-right: $space-sm;
+  }
+  &__menu-link{
+    color: $color-base;
+    &:hover{
+      text-decoration: underline;
+    }
+    @include mq(lg){
+      display: block;
+      padding: $space-s;
+      text-align: center;
+      //TODO: フォントサイズ
+    }
+    @include mq(md){
+      display: block;
+      padding: $space-s;
+      text-align: center;
+      //TODO: フォントサイズ
+    }
+    @include mq(){
+      display: block;
+      padding: $space-s;
+      text-align: center;
+      //TODO: フォントサイズ
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.l-main{
+  width: 74%;
+  box-sizing: border-box;
+  padding-right: 1%;
+  @include mq(lg){
+    width: 100%;
+    margin-bottom: $space-m;
+    padding-right: 0;
+  }
+  @include mq(md){
+    width: 100%;
+    margin-bottom: $space-m;
+    padding-right: 0;
+  }
+  @include mq(){
+    width: 100%;
+    margin-bottom: $space-m;
+    padding-right: 0;
+  }
+  &__page-title{
+    margin-bottom: $space-m;
+  }
+  &__search-result{
+    margin-bottom: $space-sm;
+  }
+}

@@ -1,0 +1,45 @@
+.p-member-form{
+  box-sizing: border-box;
+  padding: 8% 7%;
+    border: 1px solid $color-sub;
+  border-radius: 5px;
+  &__form-row{
+    margin-bottom: $space-sm;
+  }
+  &__textform{
+    width: 100%;
+  }
+  &__textarea{
+    width: 100%;
+  }
+  &__selectform{
+    width: 100%;
+  }
+  &__passwordform{
+    width: 100%;
+  }
+  &__confirm-msg{
+    margin-bottom: $space-sm;
+  }
+  &__radio-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__btn-wrapper{
+    margin-top: $space-m;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__passform-wrapper{
+    position: relative;
+  }
+  &__fonticon{
+    position: absolute;
+    top: 12px;
+    right: 11px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

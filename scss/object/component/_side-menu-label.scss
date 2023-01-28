@@ -1,0 +1,20 @@
+.c-side-menu-label{
+  padding: $space-xxs;
+  background-color: $color-sub;
+  &__title{
+    color: $color-base;
+    padding-left: 45px;
+    @include mq(lg){
+      padding-left: 0;
+      text-align: center;
+    }
+    @include mq(md){
+      padding-left: 0;
+      text-align: center;
+    }
+    @include mq(){
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+}

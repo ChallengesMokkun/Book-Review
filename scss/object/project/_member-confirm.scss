@@ -1,0 +1,18 @@
+.p-member-confirm{
+  box-sizing: border-box;
+  padding: 8% 7%;
+    border: 1px solid $color-sub;
+  border-radius: 5px;
+  &__confirm-msg{
+    margin-bottom: $space-sm;
+  }
+  &__form-row{
+    margin-bottom: $space-sm;
+  }
+  &__btn-wrapper{
+    margin-top: $space-m;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

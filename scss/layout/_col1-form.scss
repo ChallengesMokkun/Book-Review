@@ -1,0 +1,20 @@
+.l-col1-form{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(lg){
+    max-width: 492px;
+  }
+  @include mq(md){
+    min-width: 361px;
+  }
+  @include mq(){
+    width: 100%;
+    min-width: initial;
+  }
+  &__page-title{
+    padding-left: 13%;
+    padding-right: 13%;
+    margin-bottom: $space-m;
+  }
+}

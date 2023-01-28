@@ -1,0 +1,32 @@
+.l-container{
+  width: $site-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: calc(#{$header-height} + #{$space-l});
+  padding-bottom: $space-xl;
+  position: relative;
+  @include mq(lg){
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    padding-top: calc(#{$header-height-sp} + #{$space-l});
+    padding-bottom: $space-l;
+  }
+  @include mq(md){
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    padding-top: calc(#{$header-height-sp} + #{$space-l});
+    padding-bottom: $space-l;
+  }
+  @include mq(){
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    padding-top: calc(#{$header-height-sp} + #{$space-l});
+    padding-bottom: $space-l;
+  }
+}

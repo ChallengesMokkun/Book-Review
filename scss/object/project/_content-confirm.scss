@@ -1,0 +1,52 @@
+.p-content-confirm{
+  &__confirm-msg{
+    margin-bottom: $space-m;
+  }
+  &__confirm-row{
+    margin-bottom: $space-sm;
+  }
+  &__confirm-text{
+    br{
+      display: none;
+      @include mq(md){
+        display: inline;
+      }
+      @include mq(){
+        display: inline;
+      }
+    }
+  }
+  &__confirm-category{
+    margin-right: $space-sm;
+  }
+  &__img{
+    width: 100%;
+  }
+  &__btn-wrapper{
+    margin-top: $space-m;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mq(lg){
+      align-content: space-between;
+      height: 108px;
+    }
+    @include mq(md){
+      align-content: space-between;
+      height: 108px;
+    }
+    @include mq(){
+      align-content: space-between;
+      height: 108px;
+    }
+  }
+  &__btn{
+    width: calc(80% / 3);
+    @include mq(md){
+      width: 65%;
+    }
+    @include mq(){
+      width: 100%;
+    }
+  }
+}
