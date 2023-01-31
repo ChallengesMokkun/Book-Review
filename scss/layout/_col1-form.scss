@@ -3,10 +3,10 @@
   margin-left: auto;
   margin-right: auto;
   @include mq(lg){
-    max-width: 492px;
+    width: 520px;
   }
   @include mq(md){
-    min-width: 361px;
+    width: 80%;
   }
   @include mq(){
     width: 100%;

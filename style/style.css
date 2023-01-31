@@ -31,10 +31,10 @@ textarea {
   margin-right: auto; }
   @media screen and (max-width: 1366px) {
     .l-col1-form {
-      max-width: 492px; } }
+      width: 520px; } }
   @media screen and (max-width: 768px) {
     .l-col1-form {
-      min-width: 361px; } }
+      width: 80%; } }
   @media screen and (max-width: 540px) {
     .l-col1-form {
       width: 100%;
